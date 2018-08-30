@@ -1,7 +1,7 @@
 require('node-env-file')(`${__dirname}/.env`);
 
 const redis = require('redis');
-const createServer = require('./src/server.js');
+const createServer = require('./src/server');
 const {promisify} = require('util');
 
 const start = async () => {
